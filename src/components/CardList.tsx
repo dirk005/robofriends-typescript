@@ -1,7 +1,11 @@
 import * as React from 'react';
 import Card from './Card';
+import { IRobot } from '../containers/App';
 
-const CardList = ({ robots }) => {
+interface IRobotArray {
+  robots: Array<IRobot>;  
+}
+const CardList = ({ robots }:IRobotArray) => {
   return (
     <div>
       {
